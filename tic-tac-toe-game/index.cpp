@@ -110,7 +110,8 @@ void playerMove(char *spaces, char player) {
     break;
   }
 
-}
+};
+
 void computerMove(char *spaces, char computer) {
   int number;
 
@@ -128,6 +129,7 @@ void computerMove(char *spaces, char computer) {
     }
   }
 }; 
+
 char checkWinner(char *spaces) {
   // return 'X' or 'O' if found, otherwise '-'
   auto checkLine = [&](int a, int b, int c) -> char {
@@ -155,7 +157,8 @@ char checkWinner(char *spaces) {
   if (w != '-') return w;
 
   return '-';
-}
+};
+
 bool checkTie(char *spaces) {
   for (int i = 0; i < 9; i++) {
     if (spaces[i] == '-') {
